@@ -1,25 +1,85 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Armaan Spares</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 40px; }
-    h1 { color: #333; }
-    .product { border: 1px solid #ccc; padding: 20px; margin: 20px; display: inline-block; width: 200px; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 14px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+    }
+    .about {
+      text-align: center;
+    }
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .images img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Armaan Spares</h1>
+
+<header>
+  <h1>Armaan Spares</h1>
   <p>Your trusted mobile spare parts supplier</p>
+</header>
 
-  <div class="product">
-    <h2>iPhone Screen</h2>
-    <p>₹3000</p>
-  </div>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Products & Services</a>
+  <a href="#">Contact Us</a>
+</nav>
 
-  <div class="product">
-    <h2>Samsung Battery</h2>
-    <p>₹1500</p>
-  </div>
+<div class="container">
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We provide high-quality mobile spare parts for all major brands. 
+       Whether you need screens, batteries, or accessories — we've got you covered.</p>
+  </section>
+
+  <section class="images">
+    <img src="https://via.placeholder.com/250x150?text=Samsung+Battery" alt="Samsung Battery">
+    <img src="https://via.placeholder.com/250x150?text=iPhone+Screen" alt="iPhone Screen">
+    <img src="https://via.placeholder.com/250x150?text=Mobile+Covers" alt="Mobile Covers">
+  </section>
+</div>
+
 </body>
 </html>
