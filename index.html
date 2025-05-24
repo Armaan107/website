@@ -7,17 +7,16 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333;
+      background-color: #f8f8f8;
     }
     header {
-      background-color: #b30000;
+      background-color: #222;
       color: white;
       padding: 20px;
       text-align: center;
     }
     nav {
-      background-color: #e60000;
+      background-color: #444;
       display: flex;
       justify-content: center;
       gap: 40px;
@@ -35,11 +34,13 @@
       padding: 40px;
       max-width: 1000px;
       margin: auto;
-      background: #fff;
+      background: white;
+    }
+    .about {
+      text-align: left;
     }
     .about h2 {
       text-align: center;
-      color: #b30000;
     }
     .images {
       display: flex;
@@ -53,7 +54,31 @@
       height: auto;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      border: 2px solid #e60000;
+    }
+    .contact {
+      margin-top: 50px;
+      padding: 30px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+    }
+
+    .contact h2 {
+      color: #b30000;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    .map {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
     }
   </style>
 </head>
@@ -89,6 +114,26 @@
       Customer satisfaction is of paramount importance to us. To ensure a superior experience, we prioritize quick response times and maintain a staff with strong technical skills, friendly dispositions, and proficiency in multiple languages. Additionally, we assist with cargo services for customers requiring shipments.
     </p>
   </section>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> [Insert your shop or office address here]</p>
+    <p><strong>Phone:</strong> +971-XXX-XXXXXXX</p>
+    <p><strong>Email:</strong> contact@lebonintl.com</p>
+    <p><strong>Business Hours:</strong> Saturday to Thursday, 9:00 AM – 7:00 PM</p>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=PLACEHOLDER"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
 
   <section class="images">
     <img src="https://via.placeholder.com/250x150?text=Samsung+Battery" alt="Samsung Battery">
@@ -99,3 +144,4 @@
 
 </body>
 </html>
+
