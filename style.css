@@ -1,17 +1,17 @@
 /* Global Styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
   color: #222;
 }
 
 /* Header */
 header {
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #222;
+  color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 header h1 {
@@ -26,22 +26,21 @@ header p {
 
 /* Navigation Bar */
 nav {
-  background-color: #e0e0e0;
-  padding: 10px 20px;
+  background-color: #444;
+  padding: 14px 0;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 nav a {
+  color: white;
   text-decoration: none;
-  color: #003366; /* Deep blue */
   font-weight: bold;
-  font-size: 1.1em;
 }
 
 nav a:hover {
-  color: #0055aa;
+  text-decoration: underline;
 }
 
 /* Main Container */
