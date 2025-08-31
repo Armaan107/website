@@ -10,8 +10,21 @@ body {
 header {
   background-color: rgb(153, 41, 43);
   color: white;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
   padding: 20px;
+}
+
+
+/* Slight indentation for company name */
+.header-left {
+  margin-left: 30px;
+}
+
+.header-right img {
+  height: 60px; /* adjust as needed */
+  margin-right: 30px;
 }
 
 header h1 {
@@ -87,9 +100,4 @@ nav a:hover {
   transform: scale(1.03);
   border-color: #003366;
 }
-
-body {
-  background-color: pink;
-}
-
 
