@@ -12,8 +12,9 @@ header {
   color: white;
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  padding: 20px;
+  align-items: center;  /* centers vertically */
+  padding: 0 20px;      /* horizontal padding only */
+  height: 100px;        /* fixed height for header bar */
 }
 
 
@@ -23,8 +24,9 @@ header {
 }
 
 .header-right img {
-  height: 60px; /* adjust as needed */
+  height: 100%;
   margin-right: 30px;
+  object-fit: contain; /* keeps proportions */
 }
 
 header h1 {
