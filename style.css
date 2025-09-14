@@ -12,9 +12,10 @@ header {
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ensures vertical centering */
-  padding: 0 30px; /* only side padding */
-  height: 100px; /* set desired header height */
+  align-items: center; /* vertically center content */
+  padding: 0 30px;
+  height: 100px; /* header height */
+  box-sizing: border-box; /* include padding in height */
 }
 
 
@@ -24,8 +25,9 @@ header {
 }
 
 .header-right img {
-  height: 100%; /* make logo match header height */
+  height: 100%; /* now matches header height exactly */
   width: auto;  /* keep aspect ratio */
+  object-fit: contain; /* ensures image scales correctly */
 }
 
 header h1 {
