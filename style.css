@@ -19,9 +19,7 @@ header {
 }
 
 .header-right {
-  height: 100%; /* take full header height */
-  display: flex;
-  align-items: stretch; /* stretch the img */
+  position: relative;
 }
 
 /* Slight indentation for company name */
@@ -30,9 +28,11 @@ header {
 }
 
 .header-right img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   height: 100%;
   width: auto;
-  display: block; /* removes baseline spacing issues */
 }
 
 header h1 {
