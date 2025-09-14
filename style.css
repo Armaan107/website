@@ -18,6 +18,11 @@ header {
   box-sizing: border-box; /* include padding in height */
 }
 
+.header-right {
+  height: 100%; /* take full header height */
+  display: flex;
+  align-items: stretch; /* stretch the img */
+}
 
 /* Slight indentation for company name */
 .header-left {
@@ -25,9 +30,9 @@ header {
 }
 
 .header-right img {
-  height: 100%; /* now matches header height exactly */
-  width: auto;  /* keep aspect ratio */
-  object-fit: contain; /* ensures image scales correctly */
+  height: 100%;
+  width: auto;
+  display: block; /* removes baseline spacing issues */
 }
 
 header h1 {
