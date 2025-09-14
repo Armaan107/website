@@ -6,48 +6,44 @@ body {
   color: #222;
 }
 
-/* reset default h1/p margins that can push the header */
-header h1, header p {
-  margin: 0;
-}
-
-/* header */
+/* Header */
 header {
-  height: 100px;                 /* fixed header height */
-  box-sizing: border-box;        /* so padding doesn't expand it */
-  padding: 0 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: rgb(153, 41, 43);
-}
-
-/* left side: vertically center the two lines and prevent overflow */
-.header-left {
+  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  justify-content: space-between;
+  align-items: center; /* vertically center content */
+  padding: 0 30px;
+  height: 100px; /* header height */
+  box-sizing: border-box; /* include padding in height */
 }
 
-/* tune fonts so they fit inside 100px header */
-.header-left h1 { font-size: 1.4rem; line-height: 1; }
-.header-left p  { font-size: 0.95rem; }
-
-/* right side: match header height */
 .header-right {
-  height: 100%;
-  display: flex;
-  align-items: center;   /* centers if logo is shorter */
+  position: relative;
 }
 
-/* logo: scale to the header height, preserve aspect ratio */
+/* Slight indentation for company name */
+.header-left {
+  margin-left: 30px;
+}
+
 .header-right img {
-  display: block;        /* remove inline-gap */
+  position: absolute;
+  top: 0;
+  bottom: 0;
   height: 100%;
-  max-height: 100%;
   width: auto;
-  object-fit: contain;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
 }
 
 /* Navigation Bar */
