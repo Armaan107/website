@@ -109,3 +109,53 @@ nav a:hover {
   border-color: #003366;
 }
 
+/* Products Section */
+.products {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.products h2 {
+  color: #003366;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.product-card {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  color: rgb(153, 41, 43);
+  margin-top: 15px;
+}
+
+.product-card p {
+  font-size: 0.95em;
+  color: #333;
+  margin-top: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
